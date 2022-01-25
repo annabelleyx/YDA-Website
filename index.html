@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Yale Debate Association</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    </head>
+
+    <body class="home">
+        <section class="header">
+            <nav>
+                <a href="index.html"><image src="images/logo.png" /></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="tournaments.html">TOURNAMENTS</a></li>
+                        <li><a href="archives.html">ARCHIVES</a></li>
+                        <li><a href="joinus.html">JOIN US</a></li>
+                        <li><a href="">DONATE</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+    <div class="text-box">
+        <h1>The Yale Debate Association (YDA)</h1>
+        <h2>The most successful intercollegiate debating society in North America</h2>
+        <p>As Yale's only competitive intercollegiate debating organization, we compete in the American Parliamentary style of 
+            debate as a member of <br> the American Parliamentary Debate Association (APDA) and in the British Parliamentary style as 
+            a member of the US Universities Debating Association (USUDA).<br> We are currently ranked third in the world, representing
+            Yale both across the country and around the world.
+        </p>
+        <a href="tournaments.html" class="hero-btn">Join A Tournament</a>
+        <a href="joinus.html" class="hero-btn">Join Our Community</a>
+    </div>
+        </section>
+    
+    
+<!------ javasript for toggling menu ----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+</html>
